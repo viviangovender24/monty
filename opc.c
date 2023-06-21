@@ -31,8 +31,8 @@ void (*opcodes_get(char *opcode))(stack_t **stack, unsigned int line_number)
 	};
 	int i;
 
-	for (i = 0; command[i].opcode; i++)
+	/*for (i = 0; command[i].opcode; i++)
 		if (_strcmp(command[i].opcode, opcode) == 0)
-			break;
+			break;*/
 	return (command[i].f);
 }
