@@ -37,7 +37,6 @@ typedef struct stack_s
 typedef struct instruction_s
 {
 	char *opcode;
-	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 
@@ -52,7 +51,7 @@ typedef struct glob
 } global_t;
 extern global_t glob_v;
 
-/**opcode instructions*/
+/**opcodes*/
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **head, unsigned int nline);
@@ -62,14 +61,9 @@ void nop(stack_t **head, unsigned int nline);
 void add(stack_t **head, unsigned int nline);
 void sub(stack_t **head, unsigned int nline);
 void queue(stack_t **head, unsigned int nline);
-void stack(stack_t **head, unsigned int nline);
 void _div(stack_t **head, unsigned int nline);
 void mul(stack_t **head, unsigned int nline);
 void mod(stack_t **head, unsigned int nline);
-void pstr(stack_t **head, unsigned int nline);
-void pchar(stack_t **head, unsigned int nline);
-void rotr(stack_t **head, unsigned int nline);
-void rotl(stack_t **head, unsigned int nline);
 
 
 /**get function*/
