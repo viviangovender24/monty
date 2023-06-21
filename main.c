@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 	fd = check_input(argc, argv);
 	start_glob_v(fd);
 	nlines = getline(&glob_v.buffer, &size, fd);
-	/*while (nlines != -1)
+	while (nlines != -1)
 	{
 		lines[0] = _strtoky(glob_v.buffer, " \t\n");
 		if (lines[0] && lines[0][0] != '#')
@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
 		}
 		nlines = getline(&glob_v.buffer, &size, fd);
 		glob_v.current++;
-	}*/
+	}
 
 	free_glob_v();
 

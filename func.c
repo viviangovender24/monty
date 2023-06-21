@@ -21,12 +21,12 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
- * _sch - search if a char is inside a string
+ * _sc - search if a char is inside a string
  * @s: string to review.
  * @c: char to find
  * Return: 1 if successful,otherwise 0.
  */
-int _sch(char *s, char c)
+int _sc(char *s, char c)
 {
 	int current = 0;
 
@@ -60,16 +60,16 @@ char *_strtoky(char *s, char *d)
 		s = ultimo;
 	while (s[i] != '\0')
 	{
-		if (_sch(d, s[i]) == 0 && s[i + 1] == '\0')
+		if (_sc(d, s[i]) == 0 && s[i + 1] == '\0')
 		{
 			ultimo = s + i + 1;
 			*ultimo = '\0';
 			s = s + j;
 			return (s);
 		}
-		else if (_sch(d, s[i]) == 0 && _sch(d, s[i + 1]) == 0)
+		else if (_sc(d, s[i]) == 0 && _sc(d, s[i + 1]) == 0)
 			i++;
-		else if (_sch(d, s[i]) == 0 && _sch(d, s[i + 1]) == 1)
+		else if (_sc(d, s[i]) == 0 && _sc(d, s[i + 1]) == 1)
 		{
 			ultimo = s + i + 1;
 			*ultimo = '\0';
@@ -77,7 +77,7 @@ char *_strtoky(char *s, char *d)
 			s = s + j;
 			return (s);
 		}
-		else if (_sch(d, s[i]) == 1)
+		else if (_sc(d, s[i]) == 1)
 		{
 			j++;
 			i++;
