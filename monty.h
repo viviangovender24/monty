@@ -92,11 +92,11 @@ stack_t *add_dnodeint(stack_t **head, const int n);
 stack_t *add_dnodeint_end(stack_t **head, const int n);
 void free_dlistint(stack_t *head);
 
-/**str functions */
+/**func.c */
 int _sc(char *s, char c);
 char *_strcut(char *s, char *d);
 int _strcomp(char *s1, char *s2);
 
 /* main*/
-void free_glob_v(void);
+void freeglob(void);
 #endif

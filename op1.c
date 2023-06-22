@@ -15,7 +15,7 @@ void pint(stack_t **head, unsigned int nline)
 	{
 		dprintf(2, "L%u: ", nline);
 		dprintf(2, "can't pint, stack empty\n");
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 
@@ -36,7 +36,7 @@ void pop(stack_t **head, unsigned int nline)
 	if (head == NULL || *head == NULL)
 	{
 		dprintf(2, "L%u: can't pop an empty stack\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 	ptr = *head;
@@ -64,7 +64,7 @@ void swap(stack_t **head, unsigned int nline)
 	if (i < 2)
 	{
 		dprintf(2, "L%u: can't swap, stack too short\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 
@@ -91,7 +91,7 @@ void push(stack_t **head, unsigned int nline)
 	{
 		dprintf(2, "L%u: ", nline);
 		dprintf(2, "usage: push integer\n");
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 
@@ -101,7 +101,7 @@ void push(stack_t **head, unsigned int nline)
 		{
 			dprintf(2, "L%u: ", nline);
 			dprintf(2, "usage: push integer\n");
-			free_glob_v();
+			freeglob();
 			exit(EXIT_FAILURE);
 		}
 	}

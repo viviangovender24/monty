@@ -3,9 +3,9 @@
 global_t glob_v;
 
 /**
- * free_glob_v - fress the global variables.
+ * freeglob - fress the global variables.
  */
-void free_glob_v(void)
+void freeglob(void)
 {
 	free_dlistint(glob_v.head);
 	free(glob_v.buffer);
@@ -86,7 +86,7 @@ int main(int argc, char *argv[])
 			{
 				dprintf(2, "L%u: ", glob_v.current);
 				dprintf(2, "unknown instruction %s\n", lines[0]);
-				free_glob_v();
+				freeglob();
 				exit(EXIT_FAILURE);
 			}
 			glob_v.arg = _strcut(NULL, "\t\n");
@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 		glob_v.current++;
 	}
 
-	free_glob_v();
+	freeglob();
 
 	return (0);
 }

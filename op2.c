@@ -20,7 +20,7 @@ void sub(stack_t **head, unsigned int nline)
 	if (i < 2)
 	{
 		dprintf(2, "L%u: can't sub, stack too short\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 
@@ -78,7 +78,7 @@ void add(stack_t **head, unsigned int nline)
 	if (i < 2)
 	{
 		dprintf(2, "L%u: can't add, stack too short\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 

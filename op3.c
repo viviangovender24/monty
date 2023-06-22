@@ -35,13 +35,13 @@ void pchar(stack_t **head, unsigned int nline)
 	if (head == NULL || *head == NULL)
 	{
 		dprintf(2, "L%u: can't pchar, stack empty\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 	if ((*head)->n < 0 || (*head)->n >= 128)
 	{
 		dprintf(2, "L%u: can't pchar, value out of range\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 	printf("%c\n", (*head)->n);
@@ -67,13 +67,13 @@ void mod(stack_t **head, unsigned int nline)
 	if (i < 2)
 	{
 		dprintf(2, "L%u: can't div, stack too short\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 	if ((*head)->n == 0)
 	{
 		dprintf(2, "L%u: division by zero\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 
@@ -101,7 +101,7 @@ void mul(stack_t **head, unsigned int nline)
 	if (i < 2)
 	{
 		dprintf(2, "L%u: can't mul, stack too short\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 
@@ -130,13 +130,13 @@ void _div(stack_t **head, unsigned int nline)
 	if (i < 2)
 	{
 		dprintf(2, "L%u: can't div, stack too short\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 	if ((*head)->n == 0)
 	{
 		dprintf(2, "L%u: division by zero\n", nline);
-		free_glob_v();
+		freeglob();
 		exit(EXIT_FAILURE);
 	}
 
