@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 	nlines = getline(&glob_v.buffer, &size, fd);
 	while (nlines != -1)
 	{
-		lines[0] = _strtoky(glob_v.buffer, " \t\n");
+		lines[0] = _strcut(glob_v.buffer, " \t\n");
 		if (lines[0] && lines[0][0] != '#')
 		{
 			f = opcodes_get(lines[0]);
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
 				free_glob_v();
 				exit(EXIT_FAILURE);
 			}
-			glob_v.arg = _strtoky(NULL, "\t\n");
+			glob_v.arg = _strcut(NULL, "\t\n");
 			f(&glob_v.head, glob_v.current);
 		}
 		nlines = getline(&glob_v.buffer, &size, fd);

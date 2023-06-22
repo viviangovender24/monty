@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * _strcmp - Function that compares two strings.
+ * _strcomp - Function that compares two strings.
  * @s1: type str compared.
  * @s2: type str compared
  * Return: 0 if s1 and s2 are equals otherwise another
  * value if different.
  */
-int _strcmp(char *s1, char *s2)
+int _strcomp(char *s1, char *s2)
 {
 	int i;
 
@@ -45,13 +45,13 @@ int _sc(char *s, char c)
 }
 
 /**
- * _strtoky - function that cut a string into tokens depending of the delimit
+ * _strcut - function that cut a string into tokens depending of the delimit
  * @s: string to cut in parts.
  * @d: delimiters
  *
  * Return: first partition
  */
-char *_strtoky(char *s, char *d)
+char *_strcut(char *s, char *d)
 {
 	static char *ultimo;
 	int i = 0, j = 0;
