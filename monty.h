@@ -41,7 +41,7 @@ typedef struct instruction_s
 } instruction_t;
 
 /**
- * struct globals - global structure to use in the functions
+ * struct glob - global structure to use in the functions
  * @lifo: is stack or queue
  * @current: current line
  * @arg: second parameter inside the current line
@@ -52,7 +52,7 @@ typedef struct instruction_s
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO.
  */
-typedef struct globals
+typedef struct glob
 {
 	int lifo;
 	unsigned int current;
@@ -84,7 +84,7 @@ void rotr(stack_t **head, unsigned int nline);
 void rotl(stack_t **head, unsigned int nline);
 
 
-/**get function*/
+/**get func*/
 void(*opcodes_get(char *opcode))(stack_t **stack, unsigned int line_number);
 
 /**doubly linked list functions*/
