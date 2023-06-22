@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * sub - subtract the top element to the second top element of the stack.
+ * subv - subtract the top element to the second top element of the stack.
  *
  * @head: head of the linked list.
  * @nline: line number;
  * Return: nothing.
  */
-void sub(stack_t **head, unsigned int nline)
+void subv(stack_t **head, unsigned int nline)
 {
 	int i = 0;
 	stack_t *ptr = NULL;
@@ -59,13 +59,13 @@ void stack(stack_t **head, unsigned int nline)
 	glob_v.lifo = 1;
 }
 /**
- * add - adds the top two elements of the stack.
+ * addv - adds the top two elements of the stack.
  *
  * @head: head of the linked list
  * @nline: line number
  * Return: nothing
  */
-void add(stack_t **head, unsigned int nline)
+void addv(stack_t **head, unsigned int nline)
 {
 	int i = 0;
 	stack_t *ptr = NULL;
