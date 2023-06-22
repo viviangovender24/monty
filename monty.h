@@ -64,9 +64,9 @@ typedef struct glob
 
 extern global_t glob_v;
 
-/**opcode instructions*/
-void push(stack_t **stack, unsigned int line_number);
-void pall(stack_t **stack, unsigned int line_number);
+/**opc*/
+void pushv(stack_t **stack, unsigned int line_number);
+void pallv(stack_t **stack, unsigned int line_number);
 void pint(stack_t **head, unsigned int nline);
 void pop(stack_t **head, unsigned int nline);
 void swap(stack_t **head, unsigned int nline);
@@ -87,9 +87,9 @@ void rotl(stack_t **head, unsigned int nline);
 /**get func*/
 void(*opcodes_get(char *opcode))(stack_t **stack, unsigned int line_number);
 
-/**doubly linked list functions*/
-stack_t *add_dnodeint(stack_t **head, const int n);
-stack_t *add_dnodeint_end(stack_t **head, const int n);
+/**link.c*/
+stack_t *add_int(stack_t **head, const int n);
+stack_t *add_int_end(stack_t **head, const int n);
 void free_dlistint(stack_t *head);
 
 /**func.c */

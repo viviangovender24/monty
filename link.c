@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * add_dnodeint_end - adds a node at the end of the doubly linked list.
+ * add_int_end - adds a node at the end of the doubly linked list.
  * @head: first position of linked list.
  * @n: data to store
  * Return: a doubly linked list.
  */
-stack_t *add_dnodeint_end(stack_t **head, const int n)
+stack_t *add_int_end(stack_t **head, const int n)
 {
 	stack_t *tmp, *ptr;
 
@@ -39,13 +39,13 @@ stack_t *add_dnodeint_end(stack_t **head, const int n)
 
 
 /**
- * add_dnodeint - add a node at the begginning of the doubly linked list.
+ * add_int - add a node at the begginning of the doubly linked list.
  * @head: first position of linked list.
  * @n: data to store
  *
  * Return: a doubly linked list.
  */
-stack_t *add_dnodeint(stack_t **head, const int n)
+stack_t *add_int(stack_t **head, const int n)
 {
 	stack_t *tmp;
 

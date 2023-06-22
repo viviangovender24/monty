@@ -77,13 +77,13 @@ void swap(stack_t **head, unsigned int nline)
 }
 
 /**
- * push - pushes an element to the stack
+ * pushv - pushes an element to the stack
  *
  * @head: head of the linked list
  * @nline: line number
  * Return: no return.
  */
-void push(stack_t **head, unsigned int nline)
+void pushv(stack_t **head, unsigned int nline)
 {
 	int n, j;
 
@@ -109,19 +109,19 @@ void push(stack_t **head, unsigned int nline)
 	n = atoi(glob_v.arg);
 
 	if (glob_v.lifo == 1)
-		add_dnodeint(head, n);
+		add_int(head, n);
 	else
-		add_dnodeint_end(head, n);
+		add_int_end(head, n);
 }
 
 /**
- * pall - prints all values on the stack
+ * pallv - prints all values on the stack
  *
  * @head: head of the linked list
  * @nline: line numbers
  * Return: no return
  */
-void pall(stack_t **head, unsigned int nline)
+void pallv(stack_t **head, unsigned int nline)
 {
 	stack_t *aux;
 	(void)nline;
