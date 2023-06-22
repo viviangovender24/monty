@@ -7,7 +7,7 @@
  * @nline: line number
  * Return: nothing
  */
-void pstr(stack_t **head, unsigned int nline)
+void pstrs(stack_t **head, unsigned int nline)
 {
 	stack_t *ptr;
 	(void)nline;
@@ -30,7 +30,7 @@ void pstr(stack_t **head, unsigned int nline)
  * @nline: line number
  * Return: nothing
  */
-void pchar(stack_t **head, unsigned int nline)
+void pchar1(stack_t **head, unsigned int nline)
 {
 	if (head == NULL || *head == NULL)
 	{

@@ -30,13 +30,13 @@ void rotr(stack_t **head, unsigned int nline)
 	*head = ptr;
 }
 /**
- * rotl - rotates the first element to the bottom and the second to the top.
+ * rot - rotates the first element to the bottom and the second to the top.
  *
  * @head: head of the linked list
  * @nline: line number
  * Return: nothing
  */
-void rotl(stack_t **head, unsigned int nline)
+void rot(stack_t **head, unsigned int nline)
 {
 	stack_t *ptr1 = NULL;
 	stack_t *ptr2 = NULL;

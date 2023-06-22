@@ -78,10 +78,10 @@ void stack(stack_t **head, unsigned int nline);
 void _div(stack_t **head, unsigned int nline);
 void mul(stack_t **head, unsigned int nline);
 void mod(stack_t **head, unsigned int nline);
-void pstr(stack_t **head, unsigned int nline);
-void pchar(stack_t **head, unsigned int nline);
+void pstrs(stack_t **head, unsigned int nline);
+void pchar1(stack_t **head, unsigned int nline);
 void rotr(stack_t **head, unsigned int nline);
-void rotl(stack_t **head, unsigned int nline);
+void rot(stack_t **head, unsigned int nline);
 
 
 /**get func*/
