@@ -26,7 +26,7 @@ void sub(stack_t **head, unsigned int nline)
 
 	ptr = (*head)->next;
 	ptr->n -= (*head)->n;
-	pop(head, nline);
+	popv(head, nline);
 }
 
 /**
@@ -84,7 +84,7 @@ void add(stack_t **head, unsigned int nline)
 
 	ptr = (*head)->next;
 	ptr->n += (*head)->n;
-	pop(head, nline);
+	popv(head, nline);
 }
 
 

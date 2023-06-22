@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * pint - rpints the value at the top of the stack.
+ * pintv - rpints the value at the top of the stack.
  *
  * @head: head of the linked list.
  * @nline: line number
  * Return: nothing
  */
-void pint(stack_t **head, unsigned int nline)
+void pintv(stack_t **head, unsigned int nline)
 {
 	(void)nline;
 
@@ -23,13 +23,13 @@ void pint(stack_t **head, unsigned int nline)
 }
 
 /**
- * pop - removes the top element of the stack.
+ * popv - removes the top element of the stack.
  *
  * @head: head of the linked list.
  * @nline: line number
  * Return: nothing.
  */
-void pop(stack_t **head, unsigned int nline)
+void popv(stack_t **head, unsigned int nline)
 {
 	stack_t *ptr;
 
@@ -45,13 +45,13 @@ void pop(stack_t **head, unsigned int nline)
 }
 
 /**
- * swap - swaps the top two elements of the stack.
+ * swapv - swaps the top two elements of the stack.
  *
  * @head: head of the linked list.
  * @nline: line number.
  * Return: nothing
  */
-void swap(stack_t **head, unsigned int nline)
+void swapv(stack_t **head, unsigned int nline)
 {
 	int i = 0;
 	stack_t *ptr = NULL;

@@ -79,7 +79,7 @@ void mod(stack_t **head, unsigned int nline)
 
 	ptr = (*head)->next;
 	ptr->n %= (*head)->n;
-	pop(head, nline);
+	popv(head, nline);
 }
 /**
  * mul - multiplies the top element to the second top element of stack.
@@ -107,7 +107,7 @@ void mul(stack_t **head, unsigned int nline)
 
 	ptr = (*head)->next;
 	ptr->n *= (*head)->n;
-	pop(head, nline);
+	popv(head, nline);
 
 }
 /**
@@ -142,5 +142,5 @@ void _div(stack_t **head, unsigned int nline)
 
 	ptr = (*head)->next;
 	ptr->n /= (*head)->n;
-	pop(head, nline);
+	popv(head, nline);
 }

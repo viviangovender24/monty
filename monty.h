@@ -67,9 +67,9 @@ extern global_t glob_v;
 /**opc*/
 void pushv(stack_t **stack, unsigned int line_number);
 void pallv(stack_t **stack, unsigned int line_number);
-void pint(stack_t **head, unsigned int nline);
-void pop(stack_t **head, unsigned int nline);
-void swap(stack_t **head, unsigned int nline);
+void pintv(stack_t **head, unsigned int nline);
+void popv(stack_t **head, unsigned int nline);
+void swapv(stack_t **head, unsigned int nline);
 void nop(stack_t **head, unsigned int nline);
 void add(stack_t **head, unsigned int nline);
 void sub(stack_t **head, unsigned int nline);
